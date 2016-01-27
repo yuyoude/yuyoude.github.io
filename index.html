@@ -61,12 +61,21 @@
     </style>
   </head>
   <body>
-    <section class="flex-wrapper" contextmenu="yydmenu">
+    <section id="stage" class="flex-wrapper" contextmenu="yydmenu">
       <img class="logo" src="chunsheng.jpg" alt="倒卧">
       <p class="slogan">Be Moral My Friend</p>
       <menu type="context" id="yydmenu">
         <menuitem label="余有德" icon="chunsheng.jpg" onclick="alert('没有的有，道德的德')"></menuitem>
       </menu>
     </section>
+    <script>
+      document.getElementById('stage').onclick = function () {
+        try {
+          navigator.vibrate([1000, 1000, 1000]);
+        } catch (e) {
+          console.log('This poor guy don\'t know how to shake that thing.');
+        }
+      };
+    </script>
   </body>
 </html>
