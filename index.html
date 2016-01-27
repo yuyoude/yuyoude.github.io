@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>余有德</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+      body { background-color: #f3f3f3; margin: 0; padding: 0; }
+      .flex-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      @keyframes boom {
+        from {
+          width: 44%;
+        }
+        50% {
+          width: 46%;
+        }
+        100% {
+          width: 44%;
+        }
+      }
+      .logo {
+        width: 44%;
+        animation-duration: 30s;
+        animation-name: boom;
+        animation-iteration-count: infinite;
+      }
+      .slogan {
+        font-family: 'Open Sans Condensed', sans-serif;
+        background-color: black;
+        color: white;
+        padding: 1vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-wrapper">
+      <img class="logo" src="chunsheng.jpg" alt="倒卧">
+      <p class="slogan">Be Moral My Friend</p>
+    </div>
+  </body>
+</html>
